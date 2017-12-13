@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!--二级列表的item的布局-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+
+       <LinearLayout
+           android:id="@+id/mLeft_group"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+           <TextView
+               android:layout_marginRight="5dp"
+               android:id="@+id/tv_memory"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="item text" />
+           <TextView
+               android:layout_marginRight="5dp"  android:id="@+id/tv_Color"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="item text" />
+           <TextView
+               android:layout_marginRight="5dp"  android:id="@+id/tv_model"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="item text" />
+       </LinearLayout>
+
+
+
+    <ImageView
+        android:padding="5dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/mOpen"
+        android:src="@mipmap/up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <china.http.com.expendablelistviewdemo.MyRadioGroup
+        android:layout_toLeftOf="@id/mOpen"
+        android:layout_toRightOf="@id/mLeft_group"
+        android:id="@+id/mRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </china.http.com.expendablelistviewdemo.MyRadioGroup>
+</RelativeLayout>
